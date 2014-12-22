@@ -1,0 +1,931 @@
+/*------------------- index -----------------------*/
+@font-face {
+    font-family: 'Bauhaus';
+    src: url('../image/bauhaus.TTF');
+}
+
+body{
+	font-family: 'Bauhaus';
+	background-attachment: fixed;
+	margin: 5%;
+}
+
+
+h1{
+	text-align: center;
+	color: #FFFFFF;
+	padding-top: 86px;
+	font-size: 7vw;
+	text-shadow: 0 0 8px #000000;
+}
+
+h2{
+	/* [disabled]margin-right: 5px; */
+	/* [disabled]margin-left: 5px; */
+	/* [disabled]margin-bottom: 5px; */
+	color: #FFFFFF;
+}
+h3{
+    text-align: center;
+    font-size: 3vw;
+    margin: 5px;
+    padding-bottom: 20px;
+    color: #ffffff;
+}
+#yogurtflavors {
+	width: 55%;
+	float: left;
+	padding: 2%;
+	background-color: #7ECDCA;
+	margin-top: 5%;
+	border-radius: 30px;
+	margin-bottom: 5%;
+	color: rgba(255,255,255,1.00);
+}
+
+#yogurttopping {
+	width: 27%;
+	float: right;
+	right: 0px;
+	padding: 5%;
+	background-color: #93A43C;
+	margin-top: 5%;
+	border-radius: 30px;
+	color: rgba(255,255,255,1.00);
+}
+.tabs {
+	background-color: rgba(147,164,60,1.00);
+	padding: 5%;
+	border-radius: 30px;
+	margin: 0;
+	text-align: center;
+}
+#icedteaitems, #hotteaitems, #icedmilkteaitems, #healthydrinksitems, 
+#hotmilkteaitems, #traditionalchineseteaitems, #flavoredsmoothiesitems, 
+#traditionalicedteaitems {
+	padding-top: 4%;
+	padding-right: 5%;
+	padding-left: 5%;
+	padding-bottom: 5%;
+	border-radius: 30px;
+	margin-top: 5%;
+	display: none; /* KEEP HERE, so that items don't all display */
+}
+#flavoredteaitems {
+	background-color: #FFFFFF;
+	padding-right: 5%;
+	padding-left: 5%;
+	padding-bottom: 5%;
+	padding-top: 1%;
+	margin-top: 5%;
+}
+#icedteaitems {
+	background-color: rgba(126,205,202,1.00);
+	color: rgba(255,255,255,1.00);
+}
+
+
+#icedmilkteaitems {
+	background-color: #F05A28;
+	color: rgba(255,255,255,1.00);
+}
+
+#healthydrinksitems {
+	background-color: rgba(147,164,60,1.00);
+	color: rgba(255,255,255,1.00);
+}
+
+#hotmilkteaitems {
+	background-color: rgba(163,52,35,1.00);
+	color: rgba(255,255,255,1.00);
+}
+
+#traditionalchineseteaitems {
+	color: rgba(255,255,255,1.00);
+	background-color: rgba(126,205,202,1.00);
+}
+
+#flavoredsmoothiesitems {
+	background-color: rgba(147,164,60,1.00);
+	color: rgba(255,255,255,1.00);
+}
+
+#traditionalicedteaitems {
+	color: rgba(255,255,255,1.00);
+	background-color: rgba(163,52,35,1.00);
+}
+#teabanner {
+	background-image: url(../image/bubble_banner.jpg);
+	background-size: cover;
+	width: 90vw;
+	border-radius: 30px;
+	height: 350px;
+	margin-top: 5%;
+	border: 10px solid rgba(240,90,40,1.00);
+}
+
+#banneryogurt {
+	background-image: url(../image/yogurt_banner.jpg);
+	width: 90vw;
+	height: 350px;
+	background-size: cover;
+	border-radius: 30px;
+	background-repeat: no-repeat;
+	border: 10px solid rgba(126,205,202,1.00);
+	margin-top: 5%;
+}
+
+/*------------homepage slideshow----------------*/
+#slider1_container{
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 225px;
+	overflow: hidden;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	clear: both;
+	display: inline-block;
+	cursor: move;
+}
+#slides {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 225px;
+	overflow: hidden;
+	border-radius: 30px;
+}
+#slider1_container img{
+	width: 225px;
+	height: 225px;
+	display: inline-block;
+}
+
+/*------------catering--------------*/
+#cateringbanner {
+	background-image: url(../image/catering_banner.jpg);
+	background-size: cover;
+	width: 89vw;
+	border-radius: 30px;
+	height: 350px;
+	border: 10px solid rgba(147,164,60,1.00);
+	margin-top: 5%;
+	margin-bottom: 5%;
+	background-repeat: no-repeat;
+}
+.cateringinfo{
+	color: #FFFFFF;
+	text-align: center;
+	padding: 15px;
+	border-radius: 30px;
+	background-color: rgba(126,205,202,1.00);
+	padding: 25px;
+	font-size: 19px;
+}
+/*------------------- php form -----------------------*/
+.formgroup {
+    /* Form label formatting */
+}
+#form {
+	margin-top: 5%;
+	margin-bottom: 5%;
+	padding-bottom: 5%;
+	background-color: #93A43C;
+	border-radius: 30px;
+}
+.req{
+    text-decoration: none;
+    color: #ffffff;
+    text-shadow: 0 0 5px red;
+    display: inline;
+    padding: 3px;
+}
+input[type=submit] {
+    padding: 15px;
+    color: #ffffff;
+    border: none;
+    background: #7ecdca;
+    font-size: 20px;
+    font-family:'Bauhaus';
+    border-radius: 15px;
+}
+input,textarea,select{
+    border-radius: 8px;
+    padding: 5px;
+    padding-left: 10px;
+    border: none;
+    font-size: 14px;
+    font-family:'Bauhaus';
+    margin: 4px;
+    margin-left: 0;
+}
+#month, #day, #year{
+    margin-bottom: 4px;
+    margin-right: 10px;
+}
+input[type=submit]:hover{
+    background: #ffffff;
+    color: #7ecdca;
+}
+input[type=submit]:focus{
+    border:none;
+}
+input:focus, textarea:focus, select:focus{
+    border: none;
+    outline:none;
+}
+#clientcontainer{
+	float: left;
+	text-align: left;
+	padding: 3%;
+	padding: 3%;
+	border-radius: 30px;
+	width: 43%;
+	color: rgba(255,255,255,1.00);
+}
+#eventcontainer{
+	float: right;
+	clear: none;
+	padding: 3%;
+	border-radius: 30px;
+	width: 40%;
+	color: rgba(255,255,255,1.00);
+	text-align: left;
+	margin-right: 5%;
+}
+#eventcontainer div, #clientcontainer div {
+	margin-top: 5%;
+}
+#clientcontainer div.error,#eventcontainer div.error{
+	margin-top: 0;
+}
+
+#submit{
+    margin: 0 auto;
+}
+.error{
+    font-size: 13px;
+    color: white;
+    background-color: #A33423;
+    text-transform: uppercase;
+    padding: 5px;
+    border-radius: 8px;
+    position: relative;
+    margin-top: -50px;
+    display: inline-block;
+}
+#dairyfree {
+}
+.submit {
+	clear: both;
+	float: none;
+	text-align: center;
+}
+
+
+/*------------------- footer -----------------------*/
+footer {
+	position: relative;
+	text-align: center;
+	float: left;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	left: 0;
+	color: rgba(240,90,40,1.00);
+	bottom: 0;
+	width: 100%;
+}
+
+
+/*------------------- promotions -----------------------*/
+#promotiontitle{
+	float: left;
+	width: 25%;
+	text-align: left;
+	padding: 35px;
+	border-radius: 30px;
+	background-color: #A33423;
+	font-size: 17px;
+}
+#promotion {
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+.fixedpromo{
+    position: fixed;
+    top: 0;
+    margin-top: 25px;
+    
+}
+
+#promotiontitle ul{
+	padding: 0;
+	margin: 0;
+	display: block;
+	margin-top: 10px;
+}
+#promotiontitle ul li{
+	list-style-type: none;
+	text-decoration: none;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+#promotiontitle ul li{
+	text-decoration: none;
+	padding: 10px;
+	font-size: 99%;
+	color: #ffffff;
+}
+#promotiontitle ul li:hover, .selected{
+    background-color: #f05a28;
+    border-radius: 15px;
+}
+.promotiondetails{
+	float: right;
+	margin-right: 0px;
+	width: 60%;
+}
+
+#promo1, #promo2, #promo3, #promo4, #promo5{
+	margin-bottom:50px;
+	float: right;
+	border-radius: 30px;
+	width: 100%;
+	border: thick solid rgba(163,52,35,1.00);
+	display: none;
+}
+
+#scrollup{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 5%;
+}
+
+
+/*------------------- yogurt -----------------------*/
+.dietRow{
+	margin: 0 auto;
+	margin-top: 5%;
+	text-align: center;
+	clear: both;
+	width: 100%;
+}
+.close{
+    position: absolute;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 19px;
+    background: #7ecdca;
+    padding: 2px;
+    border-radius: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: 9%;
+    margin-left: 28%;
+}
+.close:hover{
+    background: #a33423;
+}
+.dietRow .specialCell{
+    display: inline-block;
+    padding: 30px;
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-top: 20px;
+    width: 10%;
+}
+.dietRow img{
+    width:  100%;
+    max-width: 150px;
+}
+#mobiledietaryinfo{
+    display:none;
+}
+
+.black_overlay{
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index:1001;
+    -moz-opacity: 0.8;
+    opacity:.80;
+}
+.white_content {
+	display: none;
+	position: fixed;
+	top: 5vh;
+	left: 20vw;
+	width: 50%;
+	height: 100%;
+	z-index: 1002;
+	overflow: auto;
+	margin-left: auto;
+	margin-right: auto;
+	right: 20vw;
+	bottom: 10vh;
+	background-repeat: no-repeat;
+}
+
+/*------------------- tea -----------------------*/
+ul.tabs li{
+	list-style: none;
+	margin-left: 0;
+}
+ul.tabs li a{
+    text-decoration: none;
+    color: #a33446;
+}
+#hotteaitems, #flavoredteaitems{
+	display: none;
+	background-color: rgba(240,90,40,1.00);
+	color: rgba(255,255,255,1.00);
+}
+
+#toppings{
+	right: 0;
+	float: right;
+	width: 30%;
+	background-color: rgba(240,90,40,1.00);
+	padding-top: 2%;
+	padding-right: 4%;
+	padding-left: 4%;
+	padding-bottom: 4%;
+	border-radius: 30px;
+	margin-top: 5%;
+	color: rgba(255,255,255,1.00);
+}
+#icelevel{
+	right: 0;
+	float: right;
+	width: 12%;
+	background-color: rgba(126,205,202,1.00);
+	padding-top: 2%;
+	padding-right: 2%;
+	padding-left: 2%;
+	padding-bottom: 2%;
+	margin-top: 5%;
+	border-radius: 30px;
+	clear: right;
+	color: rgba(255,255,255,1.00);
+	margin-left: 1.5%;
+}
+#sugarlevel{
+	right: 0;
+	float: right;
+	width: 14%;
+	background-color: rgba(163,52,35,1.00);
+	padding-top: 2%;
+	padding-right: 2%;
+	padding-left: 2%;
+	padding-bottom: 2%;
+	margin-top: 5%;
+	margin-right: 2%;
+	border-radius: 30px;
+	color: rgba(255,255,255,1.00);
+	margin-left: 7%;
+}
+.flavorcontainer{
+	float: left;
+	width: 55%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+.nothovered{
+    background-color: #ffffff;
+}
+.hovered {
+    background-color: #7ecdca;
+    color: #ffffff;
+    cursor: pointer;
+}
+.teaselect{
+    border: 4px solid;
+    border-color: #617015;
+}
+.tabs li{
+	display: inline-block;
+	border-radius: 30px;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 5px;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	color: #617015;
+	background: #ffffff;
+}
+#banner-left img {
+	float: left;
+	border-radius: 30px;
+	width: 100%;
+}
+#banner-right img {
+	border-radius: 30px;
+	margin-top: 0.5%;
+	margin-right: 0.5%;
+	margin-left: 0.5%;
+	margin-bottom: 0.5%;
+	width: 49%;
+}
+#homepage {
+	margin-top: 5%;
+	margin-bottom: 5%;
+	height: 350px;
+}
+#banner-right   {
+	float: right;
+	width: 39.5%;
+}
+#banner-left {
+	width: 59.5%;
+}
+#yogurtflavors img {
+	padding: 2%;
+	width: 25%;
+	text-shadow: 0px 0px;
+	border-radius: 50%;
+	margin: 1%;
+	background-color: rgba(255,255,255,0.55);
+}
+#dairy {
+	background-image: url(../image/dietary-restriction-assets/dairy-free.png);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-attachment: scroll;
+}
+#gluten {
+	background-image: url(../image/dietary-restriction-assets/gluten-free.png);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+#veg {
+	background-image: url(../image/dietary-restriction-assets/vegan.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+#kos {
+	background-image: url(../image/dietary-restriction-assets/kosher.png);
+	background-size: contain;
+}
+#toppings img {
+	border-radius: 30px;
+	width: 98%;
+	border-style: solid;
+	border-width: 3px;
+}
+#yogurttopping img {
+	border-radius: 30px;
+	width: 98%;
+	border-width: 3px;
+	border-style: solid;
+}
+#yogurtprice {
+	float: right;
+}
+
+/*------------------- (desktop)-----------------------*/
+@media (min-width:641px){
+    /*---------main menu-------*/
+    nav{
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-size: 120%;
+	margin-top: 11%;
+	margin-right: 70px;
+	background-image: url(../image/bar.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: auto;
+    }
+    #mainmenu a.active{
+	padding-top: 60px;
+    }
+    #navcatering {
+	    background-image: url(../image/catering.png);
+	    background-repeat: no-repeat;
+	    background-size: contain;
+	    padding-top: 46px;
+	    color: #FFFFFF;
+	    text-decoration: none;
+	    margin-left: 7px;
+	-webkit-transition: all .5s ease;
+	    -o-transition: all .5s ease;
+	    transition: all .5s ease;
+	    margin-right: 15px;
+    }
+    #navnews {
+	background-image: url(../image/promos.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding-top: 46px;
+	color: #FFFFFF;
+	text-decoration: none;
+	margin-left: 7px;
+	-webkit-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+	margin-right: 15px;
+	padding-left: 7px;
+    }
+    
+    #navtea {
+	    background-image: url(../image/tea.png);
+	    background-repeat: no-repeat;
+	    background-size: contain;
+	    padding-left: 20px;
+	    padding-right: 20px;
+	    padding-top: 46px;
+	    color: #FFFFFF;
+	    text-decoration: none;
+	    margin-left: 7px;
+	-webkit-transition: all .5s ease;
+	    -o-transition: all .5s ease;
+	    transition: all .5s ease;
+    }
+    
+    #navyogurt {
+	background-image: url(../image/yogurt.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	/* [disabled]margin-top: 46px; */
+	margin-left: 15px;
+	margin-right: 12px;
+	padding-top: 46px;
+	padding-left: 10px;
+	padding-right: 7px;
+	color: #FFFFFF;
+	text-decoration: none;
+	-webkit-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+    }
+    
+    #navcatering:hover, #navyogurt:hover,#navnews:hover,#navtea:hover{
+	padding-top: 60px;
+	text-align: center;
+    }
+    #logo img{
+	width: 275px;
+	margin-top: 2%;
+    }
+
+    #menuicon{
+        display: none;
+    }
+    #clientcontainer{
+	text-align: left;
+	width: 30%;
+	margin-left: 10%;
+    }
+}
+
+
+
+/*-------------------mobile design (iPhone)-----------------*/
+
+@media (max-width:640px){
+    /*------------menu------------*/
+    
+	.menuicon{
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		text-align: center;
+		padding: 5px;
+	    }
+	.menuicon img{
+	    width: 7vw;
+	}
+	#banner{
+	    }
+	    h1{
+		font-size: 60px;
+	    }
+	#teabanner, #banneryogurt, #cateringbanner{
+	    width: 95%;
+	}
+	#logo {
+	    position: relative;
+	    display: block;
+	    width: 250px;
+	    padding: 10px;
+	    margin: 0 auto;
+		margin-top: 25px;
+		margin-bottom: 10px;
+	    }
+	#logo img{
+	        width: 250px;
+	    }
+	#mainmenu{
+	    position: relative;
+	    width: 100%;
+	    font-size: 135%;
+	    left: 0;
+	    text-align: center;
+	    padding-top: 10px;
+	    padding-bottom: 10px;
+	    background: #7ecdca;
+	    border-radius: 30px;
+	    margin-left: 0px;
+	    display: none; /* Need this so menu doesn't automatically display*/
+	}
+	#mainmenu a{
+		list-style: none;
+		display: block;
+		display: block;
+		text-decoration: none;
+		color: #ffffff;
+		padding: 12px;
+	    }
+	#mainmenu a.active{
+		color: #a43222;
+	    }
+	#slider1_container{
+	    display:none;
+	}
+	table, tr, td{
+	    }
+	    
+    /*-------------yogurt/tea-----------*/
+
+	#promos{
+		margin-top: 60px;
+		font-size: 3vw;
+		padding: 0;
+		width: 80vw;
+	    }
+	#toppings {
+		float: none;
+		clear: both;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		margin-top: 5%;
+		width: 80vw;
+	    }
+	.flavorcontainer {
+		margin-left: auto;
+		margin-right: auto;
+		float: none;
+		clear: both;
+		text-align: center;
+		width: 90vw;
+		text-align: left;
+	    }
+	#yogurtflavors {
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		clear: both;
+		float: none;
+		width: 80vw;
+	    }
+	#yogurttopping {
+		clear: both;
+		float: none;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 5%;
+		width: 80vw;
+	    }
+	.flavorcontainer .tabs {
+	    text-align: center;
+	    width: auto;
+	}
+	#sugarlevel {
+	float: right;
+	margin-left: auto;
+	margin-right: 5vw;
+	text-align: center;
+	width: 37%;
+	}
+	#icelevel {
+	float: left;
+	margin-left: 5vw;
+	margin-right: auto;
+	text-align: center;
+	width: 40%
+	}
+	#dairyfree, #glutenfree, #vegan, #kosher {
+		padding: 0;
+		width: 40vw;
+		margin-top: 5%;
+		margin-bottom: 5%;
+	}
+	
+	#mobiledietaryinfo{
+	    display:block;
+	    color:#ffffff;
+	    font-size: 20px;
+	    background: #7ecdca;
+	    border-radius: 10px;
+	    padding: 12px;
+	}
+
+	/*-------------promos------------*/
+	.promotiondetails {
+		margin-left: auto;
+		margin-right: auto;
+		float: none;
+		clear: both;
+		text-align: center;
+		width: 90vw;
+	    }
+	.fixedpromo{
+	    position: static;
+	    top: 0;
+	    margin-top: 25px;
+	    
+	}
+	h3{
+	    font-size: 130%;
+	}
+	#promotiontitle {
+	float: none;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5%;
+	padding: 5%;
+	width: 80vw;
+	font-size: 25px;
+	    }
+	
+
+	/*-------------forms------------*/
+	#clientcontainer, #eventcontainer {
+	width: 90%;
+	text-align: center;
+	margin-top: 5%;
+	clear: both;
+	padding: 5%;
+	float: none;
+	height: auto;
+	}
+	input,textarea,select{
+	    width: 95%
+	}
+	#cateringbanner, #cateringinfo{
+	    width: 95%
+	    
+	}
+	#banner-left {
+		float: none;
+		width: 100%;
+	}
+	#banner-right   {
+		width: 100%;
+		margin-top: 5%;
+	}
+	#yogurtflavors img {
+		width: 40%;
+	}
+	
+.white_content {
+	width: 80%;
+	height: 100%;
+	background-repeat: no-repeat;
+	left: 2%;
+	right: 2%;
+	top: 2%;
+	bottom: 2%;
+	position: fixed;
+}
+#yogurtprice {
+	float: right;
+	margin-right: 15%;
+	margin-top: 1%;
+}
+
+
+}
+
+
+/*-------------------small desktop / ipad -------------------*/
+@media (min-width:641px) and (max-width:1016px){
+    #longsticky, #promos, .bigCell{
+	width: 300px;
+    }
+    #contact{
+	margin: 0 auto;
+	margin-top: 80px;
+    }
+    #logo img{
+	width: 30%;
+    }
+}
