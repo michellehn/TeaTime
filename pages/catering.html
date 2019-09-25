@@ -1,15 +1,34 @@
 <!DOCTYPE html>
 <html>
 
-<?php
-include('header.html');
-?>
+<head>
+        <meta charset="utf-8"/>
+        <title>Tea Time</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <script src='http://code.jquery.com/jquery-1.11.0.min.js'></script>    
+</head>
 
 <body>
 	<!-- Below is the menubar, note: menubar is different for each page (class selected)-->
-	<?php
-	include('mainmenu.html');
-	?>
+
+	<a href="../index.html" id="logoa">
+		 <div id="logo">
+			  <img src="../image/logo.png" alt="TeaTime logo">
+		 </div>
+	</a>
+	
+	
+	<div class="menuicon">
+		 <img src="../image/menuicon.png" alt="Menu Icon" class="menuicon" id="menuicon">
+	</div>
+	
+	<nav id="mainmenu">
+		<a href="tea.html" id="navtea">Tea</a> 
+		<a href="yogurt.html" id="navyogurt">Yogurt</a> 
+		<a href="news.html" id="navnews">Promos</a> 
+		<a href="catering.html" id="navcatering">Catering</a>
+	</nav>
 	<!-- End of the menubar-->
 
 	<!-- div for image banner or image gallery (insert background image)-->
@@ -26,7 +45,7 @@ include('header.html');
 <!-- Catering Contact Form-->
 <!-- need to make the form functional -->
 
-<form action="cateringecho.php" method="GET" id="form"> 
+<form action="cateringecho.html" method="GET" id="form"> 
 	<div id="clientcontainer">
 		<h2>Client Information</h2>
 		<div>
@@ -151,9 +170,12 @@ include('header.html');
 
 </form>
 
-	<?php
-	include('footer.html');
-	?>
+<footer>
+        &copy; 2014 Tea Time
+        <!-- Maybe also include a contact link here or links to social media -->
+</footer>
+
+<script src='../jquery/script.js'></script>
 
 
 

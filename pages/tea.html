@@ -1,15 +1,34 @@
 <!DOCTYPE html>
 <html>
 
-<?php
-include('header.html');
-?>
+<head>
+        <meta charset="utf-8"/>
+        <title>Tea Time</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <script src='http://code.jquery.com/jquery-1.11.0.min.js'></script>    
+</head>
 
 <body>
 		<!-- Below is the menubar, note: menubar is different for each page (class selected)-->
-	<?php
-	include('mainmenu.html');
-	?>
+
+      <a href="../index.html" id="logoa">
+	       <div id="logo">
+			<img src="../image/logo.png" alt="TeaTime logo">
+	       </div>
+      </a>
+      
+      
+      <div class="menuicon">
+	       <img src="../image/menuicon.png" alt="Menu Icon" class="menuicon" id="menuicon">
+      </div>
+      
+      <nav id="mainmenu">
+	      <a href="tea.html" id="navtea">Tea</a> 
+	      <a href="yogurt.html" id="navyogurt">Yogurt</a> 
+	      <a href="news.html" id="navnews">Promos</a> 
+	      <a href="catering.html" id="navcatering">Catering</a>
+      </nav>
 		<!-- End of the menubar-->
 
 		<!-- div for image banner or image gallery (insert background image)-->
@@ -231,13 +250,94 @@ include('header.html');
 </div>	
 
 
-<?php
-include('dietary.html')
-?>
 
-<?php
-include('footer.html');
-?>
+<!--The CSS and js code for popup window is borrowed online from 'http://stackoverflow.com/questions/19064987/html-css-popup-div-on-text-click', 
+ we edited the code to meet our needs.-->
+
+<div onLoad="MM_preloadImages('../image/dairy-free-hover.png','../image/gluten-free-hover.png','../image/vegan-hover.png','../image/kosher-hover.png')">
+<div class= 'dietRow'>
+        <!--The following part is for the dairy free block-->
+        <div class = 'specialCell' id="dairyfree">
+                <a href = "javascript:void(0)" onclick = "document.getElementById('dairy').style.display='block';document.getElementById('fade1').style.display='block'">
+                <span title="Click here to view dairy-free options">
+                    <img src="../image/dairy-free.png" alt="TeaTime" id="Image1" onMouseOver="MM_swapImage('Image1','','../image/dairy-free-hover.png',1)" onMouseOut="MM_swapImgRestore()">
+                </span>
+                </a>
+                <br>
+        </div>
+
+        <div id="dairy" class="white_content">
+        <a href = "javascript:void(0)" onclick = "document.getElementById('dairy').style.display='none';document.getElementById('fade1').style.display='none'" class="close">Close</a></div> 
+        
+         <div id="fade1" class="black_overlay"></div>
+         <!--The end of the first block-->
+
+
+         <!--The followin code is for the gluten free block-->
+        <div class = 'specialCell' id="glutenfree">
+                <a href = "javascript:void(0)" onclick = "document.getElementById('gluten').style.display='block';document.getElementById('fade2').style.display='block'">
+                <span title="Click here to view gluten-free options">
+                    <img src="../image/gluten-free.png" alt="TeaTime" id="Image2" onMouseOver="MM_swapImage('Image2','','../image/gluten-free-hover.png',1)" onMouseOut="MM_swapImgRestore()">
+                </span>
+                </a>
+                <br>
+        </div>
+
+        <div id="gluten" class="white_content">
+        <a href = "javascript:void(0)" class="close" onclick = "document.getElementById('gluten').style.display='none';document.getElementById('fade2').style.display='none'">Close</a></div> 
+        
+        <div id="fade2" class="black_overlay"></div>
+        <!--The end of the second block-->
+
+
+        <!--The following is for the vegan block-->
+        <div class = 'specialCell' id ="vegan">
+                <a href = "javascript:void(0)" onclick = "document.getElementById('veg').style.display='block';document.getElementById('fade3').style.display='block'">
+                <span title="Click here to view vegan options">
+                    <img src="../image/vegan.png" alt="TeaTime" id="Image3" onMouseOver="MM_swapImage('Image3','','../image/vegan-hover.png',1)" onMouseOut="MM_swapImgRestore()">
+                </span>
+                </a>
+                <br>
+        </div>
+
+        <div id="veg" class="white_content">
+        
+        <a href = "javascript:void(0)" class="close" onclick = "document.getElementById('veg').style.display='none';document.getElementById('fade3').style.display='none'">Close</a></div> 
+        
+        <div id="fade3" class="black_overlay"></div>
+        <!--The end of the third block-->
+
+
+
+        <!--The following is for the kosher block-->
+        <div class = 'specialCell' id = "kosher">
+                <a href = "javascript:void(0)" onclick = "document.getElementById('kos').style.display='block';document.getElementById('fade4').style.display='block'">
+                <span title="Click here to view kosher options">
+                    <img src="../image/kosher.png" alt="Kosher" id="Image4" onMouseOver="MM_swapImage('Image4','','../image/kosher-hover.png',1)" onMouseOut="MM_swapImgRestore()">
+                </span>
+                </a>
+                <br>
+        </div>
+
+        <div id="kos" class="white_content">
+        
+        <a href = "javascript:void(0)" class="close" onclick = "document.getElementById('kos').style.display='none';document.getElementById('fade4').style.display='none'">Close</a></div> 
+        
+        <div id="fade4" class="black_overlay"></div>
+        <!--The end of the fourth block-->
+        <p id="mobiledietaryinfo">
+            Click one of the above icons to see diet-friendly options.
+        </p>
+
+</div>
+</div>
+
+<footer>
+        &copy; 2014 Tea Time
+        <!-- Maybe also include a contact link here or links to social media -->
+</footer>
+
+<script src='../jquery/script.js'></script>
 
 
 </body>
